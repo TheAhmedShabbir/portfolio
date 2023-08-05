@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: sans-serif, Arial;
+}
+
+h1.name {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    font-size: 2.8em;
+    line-height: 1;
+}
+
+h1.headings {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    font-size: 2em;
+}
+
+p.summary {
+    width: 88%;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    background: #000;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    animation: jumpingAnimation 1.4s infinite;
+}
+
+.dot-1 {
+    -webkit-animation-delay: 100ms;
+    animation-delay: 100ms;
+ }
+.dot-2 {
+    -webkit-animation-delay: 300ms;
+    animation-delay: 300ms;
+ }
+.dot-3 {
+    -webkit-animation-delay: 500ms;
+    animation-delay: 500ms;
+ }
+
+ @keyframes jumpingAnimation {
+    0% {
+      bottom: 0px;
+    }
+    20% {
+        bottom: 5px;
+    }
+    40% {
+        bottom: 0px;
+    }
+}
